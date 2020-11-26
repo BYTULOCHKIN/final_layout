@@ -11,36 +11,39 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <div class="container">
-        <nav class="nav">
-          <div class="nav-title">
-            <img class="nav-title__logo" src="./img/logo/ten-x-logo-dark.png" />
-            <div class="nav-title__conection">
-              <img
-                class="nav-title__img"
-                src="img/logo/Vector Smart Object.png"
-              />
-              <a class="nav-title__phone" href="tel:+78142332211"
-                >+7(814)-233-22-11</a
-              >
-            </div>
+      <nav class="nav">
+        <div class="nav-title">
+          <img class="nav-title__logo" src="./img/logo/ten-x-logo-dark.png" />
+          <div class="nav-title__conection">
+            <img
+              class="nav-title__img"
+              src="img/logo/Vector Smart Object.png"
+            />
+            <a class="nav-title__phone" href="tel:+78142332211"
+              >+7(814)-233-22-11</a
+            >
           </div>
+        </div>
 
-          <div class="nav-menu">
-            <ul class="nav-menu__list">
-              <li>
-                <a class="nav-menu__item" href="#">about</a>
-              </li>
-              <li><a class="nav-menu__item" href="#">projects</a></li>
-              <li><a class="nav-menu__item" href="#">blog</a></li>
-              <li><a class="nav-menu__item" href="#">contact </a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+        <div class="nav-menu">
+          <ul class="nav-menu__list">
+            <li>
+              <a class="nav-menu__item" href="#">about</a>
+            </li>
+            <li><a class="nav-menu__item" href="#">projects</a></li>
+            <li><a class="nav-menu__item" href="#">blog</a></li>
+            <li><a class="nav-menu__item" href="#">contact </a></li>
+          </ul>
+        </div>
+      </nav>
+
       <div class="sidebar">
         <ul class="sidebar__list">
           <li class="sidebar__item">
@@ -67,32 +70,78 @@
       </div>
     </header>
     <main class="main">
-      <section class="promo">
-        <img class="promo__img" src="./img/10X.png" alt="" />
-        <img class="promo__img promo__img-2" src="./img/Layer 25.png" alt="" />
+      <div class="container">
+        <section class="promo">
+          <img class="promo__img" src="./img/10X.png" alt="" />
+          <img
+            class="promo__img promo__img-2"
+            src="./img/Layer 25.png"
+            alt=""
+          />
 
-        <p
-          style="-webkit-transform: rotate(-90deg); transform: rotate(-90deg)"
-          class="promo__text promo__left-text"
-        >
-          what we do
-        </p>
-        <div
-          style="-webkit-transform: rotate(90deg); transform: rotate(90deg)"
-          class="promo__number"
-        >
-          1
+          <p
+            style="-webkit-transform: rotate(-90deg); transform: rotate(-90deg)"
+            class="promo__text promo__left-text"
+          >
+            what we do
+          </p>
+          <div
+            style="-webkit-transform: rotate(90deg); transform: rotate(90deg)"
+            class="promo__number"
+          >
+            1
+          </div>
+          <div class="promo__circle"></div>
+          <p
+            style="-webkit-transform: rotate(90); transform: rotate(90deg)"
+            class="promo__text promo__right-text"
+          >
+            who we are
+          </p>
+        </section>
+        <h2 class="promo__title">your presence</h2>
+
+        <section class="main-button">
+          <img
+            class="main-button__img"
+            src="./img/main-button.png"
+            alt="main-button"
+          />
+        </section>
+        <div class="quote">
+          <h2 class="quote__title">
+            We're a designer & developer who love building cool stuff with our
+            clients.
+          </h2>
+          <div class="quote__signature">
+            <img src=".//img/quote.svg" class="quote__img" />
+          </div>
         </div>
-        <div class="promo__circle"></div>
-        <p
-          style="-webkit-transform: rotate(90); transform: rotate(90deg)"
-          class="promo__text promo__right-text"
-        >
-          who we are
-        </p>
-      </section>
+      </div>
 
-      <h2 class="promo__title">your presence</h2>
+      <div class="opportunities">
+        <div class="opportunities__left">
+          <div class="cards">
+            <img src="./img/bg_card.png" class="cards__bg" />
+            <img src="./img/front__card.png" alt="" class="cards__front" />
+          </div>
+
+          <div class="cards__number-slide">01<span>/05</span></div>
+        </div>
+        <div class="strategy">
+          <h2 class="strategy__title">Strategy & Creative</h2>
+          <h2 class="strategy__title">
+            We designe and build digital products, and services we believe in.
+          </h2>
+          <p class="strategy__text">
+            Strategy is not something you can retrospectively apply in order to
+            make irrelevant ideas seem coherent strategists start out with a
+            clear approach to ensure our creative proposal will match your
+            business needs.
+          </p>
+          <button class="strategy__button">LEARN MORE</button>
+        </div>
+      </div>
     </main>
   </body>
 </html>
