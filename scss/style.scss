@@ -42,6 +42,7 @@ li {
   display: flex;
   align-items: center;
   &__logo {
+    padding-left: 60px;
     margin-right: 86px;
   }
   &__conection {
@@ -59,13 +60,14 @@ li {
 
   &__list {
     display: flex;
+    justify-content: space-between;
     text-transform: uppercase;
+    width: 550px;
   }
   &__list:last-child {
     margin-right: 0;
   }
   &__item {
-    margin-right: 70px;
     color: $textColor;
   }
 }
@@ -87,41 +89,19 @@ li {
   }
 }
 .main {
-  margin: auto;
 }
 .container {
-  max-width: 1185px;
+  max-width: 1900px;
+  margin: 0 auto;
 }
 .promo {
-  max-width: 100%;
   position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    width: 210px;
-    height: 1px;
-    background: $linearGradient;
-    top: 50%;
-    left: -140px;
-    z-index: 1;
-  }
+
   &__img {
+    margin: 100px auto 35px auto;
+    width: 60%;
     position: relative;
-    width: 100%;
     display: block;
-    margin: 80px auto;
-
-    z-index: 1;
-  }
-
-  &__img-2 {
-    display: block;
-    width: 100%;
-    margin: auto;
-    position: absolute;
-    margin: auto;
-    top: -5px;
-    right: 3px;
     z-index: 10;
   }
   &__title {
@@ -138,8 +118,19 @@ li {
     text-transform: uppercase;
     color: #5e00ca;
     position: absolute;
-    top: 250px;
-    left: -200px;
+    top: 50%;
+    left: 0px;
+    transform: rotate(-90deg);
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 190px;
+      background: $linearGradient;
+      bottom: -220px;
+      left: 50%;
+      z-index: 1;
+    }
   }
   &__right-text {
     position: relative;
@@ -147,7 +138,7 @@ li {
     color: $textColor;
     position: absolute;
     top: 50%;
-    right: -200px;
+    right: 0px;
     &::before {
       content: "";
       position: absolute;
@@ -173,7 +164,7 @@ li {
     font-size: 28pt;
     position: absolute;
     top: 40.5%;
-    right: -30px;
+    right: 180px;
     border-left: 2px solid #d5536f;
     z-index: 10;
   }
@@ -205,8 +196,8 @@ li {
     height: 10px;
     border-radius: 50%;
     background-color: #d5536f;
-    top: 49%;
-    left: 5.7%;
+    top: 51%;
+    left: 23.5%;
 
     z-index: 20;
   }
@@ -218,8 +209,8 @@ li {
     height: 16px;
     border-radius: 50%;
     background-color: #742c3c;
-    top: 48.3%;
-    left: 5.5%;
+    top: 50%;
+    left: 23.4%;
     z-index: 10;
   }
 }
@@ -264,23 +255,22 @@ li {
 }
 
 .opportunities {
-  height: 1270px;
-  width: 100%;
   display: flex;
   background-image: url(../img/bg__map.png);
   background-position: cover;
   background-repeat: no-repeat;
-  justify-content: space-between;
-  margin: auto;
+  justify-content: space-around;
   &__left {
     position: relative;
-    top: 200px;
+    max-width: 950px;
+    top: 100px;
   }
-  padding: 0 40px;
+  padding: 0 20px;
 }
 
 .cards {
   position: relative;
+  left: 0px;
   &::before {
     transform: rotate(180deg);
     text-align: right;
@@ -333,9 +323,8 @@ li {
 
 .strategy {
   position: relative;
-  top: 200px;
-  margin-left: 50px;
-  max-width: 730px;
+  top: 100px;
+  max-width: 680px;
   font-family: "Playfair Display", serif;
   &__title {
     font-family: "Playfair Display", serif;
@@ -366,7 +355,7 @@ li {
     outline: none;
     &:active {
       transform: scale(0.98);
-      border: none;
+      color: black;
       box-shadow: 0px 5px 10px 5px rgba($color: #1d1203, $alpha: 0.7);
     }
   }
@@ -374,18 +363,96 @@ li {
 
 @media (max-width: 1690px) {
   .opportunities {
-    flex-direction: column;
+    margin: auto;
   }
   .strategy {
     top: 0px;
   }
   .opportunities__left {
-    transform: scale(0.8);
+    transform: scale(0.75);
     top: -100px;
+    left: 0px;
+  }
+
+  .strategy {
+    &__title {
+      font-family: "Playfair Display", serif;
+      font-size: 28pt;
+    }
+
+    &__text {
+      font-size: 16pt;
+    }
   }
 }
 @media (max-width: 1580px) {
+  .strategy {
+    width: 350px;
+    &__title {
+      font-family: "Playfair Display", serif;
+      font-size: 26pt;
+    }
+    &__text {
+      width: 300px;
+      font-size: 14pt;
+    }
+  }
+}
+@media (max-width: 1500px) {
+  .promo__img {
+    width: 80%;
+  }
+}
+@media (max-width: 1500px) {
+  .promo__img {
+    width: 60%;
+  }
+}
+@media (max-width: 1200px) {
+  .promo__number {
+    display: none;
+  }
+}
+@media (max-width: 990px) {
+  .nav-menu__list {
+    width: 350px;
+  }
+  .opportunities {
+    flex-direction: column;
+  }
   .opportunities__left {
+    margin: auto;
     transform: scale(0.7);
+    left: -150px;
+  }
+  .strategy {
+    margin: auto;
+    &__title {
+      font-family: "Playfair Display", serif;
+      font-size: 26pt;
+    }
+    &__text {
+      font-size: 14pt;
+    }
+  }
+  .promo__left-text::before {
+    display: none;
+  }
+  .promo__circle {
+    display: none;
+  }
+}
+@media (max-width: 990px) {
+  .nav-menu__list {
+    width: 50px;
+    flex-direction: column;
+    & li {
+      width: 50px;
+    }
+  }
+}
+@media (max-width: 610px) {
+  .opportunities__left {
+    transform: scale(0.55);
   }
 }
