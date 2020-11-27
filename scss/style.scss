@@ -2,7 +2,7 @@ $linearGradient: linear-gradient(to left, #d5536f, #5e00ca);
 $textColor: #656b6f;
 $bodyColor: #111619;
 $textColor_2: #fff;
-$linearGradient-2: linear-gradient(to right, #e84b37, #ee7d16);
+$linearGradient-2: linear-gradient(55deg, #e84b37, #ee7d16);
 * {
   margin: 0;
   padding: 0;
@@ -271,7 +271,6 @@ li {
 
 .cards {
   position: relative;
-  left: 0px;
   &::before {
     transform: rotate(180deg);
     text-align: right;
@@ -372,7 +371,7 @@ li {
   .opportunities__left {
     transform: scale(0.75);
     top: -100px;
-    left: 0px;
+    left: -100px;
   }
 
   .strategy {
@@ -413,7 +412,11 @@ li {
   .promo__number {
     display: none;
   }
+  .cards::before {
+    display: none;
+  }
 }
+
 @media (max-width: 990px) {
   .nav-menu__list {
     width: 350px;
@@ -453,6 +456,40 @@ li {
   }
 }
 @media (max-width: 610px) {
+  .promo__title {
+    font-size: 14px;
+  }
+  .promo__text {
+    display: none;
+  }
+  .promo__img {
+    width: 100%;
+  }
+  .quote__title {
+    font-size: 26px;
+  }
+  .nav {
+    flex-direction: column;
+    height: 220px;
+    margin-right: auto;
+  }
+  .nav-title {
+    &__logo {
+      margin-bottom: 30px;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .nav-menu__list {
+    width: 320px;
+    flex-direction: row;
+    margin: auto;
+  }
+  .cards::after {
+    display: none;
+  }
+
   .opportunities__left {
     transform: scale(0.55);
   }

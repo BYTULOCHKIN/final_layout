@@ -347,7 +347,6 @@ li {
 
 .cards {
   position: relative;
-  left: 0px;
 }
 
 .cards::before {
@@ -375,10 +374,9 @@ li {
   width: 150px;
   top: 200px;
   left: 100px;
-  background: -webkit-gradient(linear, left top, right top, from(#e84b37), to(#ee7d16));
-  background: -webkit-linear-gradient(left, #e84b37, #ee7d16);
-  background: -o-linear-gradient(left, #e84b37, #ee7d16);
-  background: linear-gradient(to right, #e84b37, #ee7d16);
+  background: -webkit-linear-gradient(35deg, #e84b37, #ee7d16);
+  background: -o-linear-gradient(35deg, #e84b37, #ee7d16);
+  background: linear-gradient(55deg, #e84b37, #ee7d16);
   position: absolute;
   z-index: 30;
 }
@@ -450,10 +448,9 @@ li {
           justify-content: center;
   -webkit-border-radius: 4px;
           border-radius: 4px;
-  background: -webkit-gradient(linear, left top, right top, from(#e84b37), to(#ee7d16));
-  background: -webkit-linear-gradient(left, #e84b37, #ee7d16);
-  background: -o-linear-gradient(left, #e84b37, #ee7d16);
-  background: linear-gradient(to right, #e84b37, #ee7d16);
+  background: -webkit-linear-gradient(35deg, #e84b37, #ee7d16);
+  background: -o-linear-gradient(35deg, #e84b37, #ee7d16);
+  background: linear-gradient(55deg, #e84b37, #ee7d16);
   -webkit-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
@@ -481,7 +478,7 @@ li {
         -ms-transform: scale(0.75);
             transform: scale(0.75);
     top: -100px;
-    left: 0px;
+    left: -100px;
   }
   .strategy__title {
     font-family: "Playfair Display", serif;
@@ -520,6 +517,9 @@ li {
 
 @media (max-width: 1200px) {
   .promo__number {
+    display: none;
+  }
+  .cards::before {
     display: none;
   }
 }
@@ -575,6 +575,57 @@ li {
 }
 
 @media (max-width: 610px) {
+  .promo__title {
+    font-size: 14px;
+  }
+  .promo__text {
+    display: none;
+  }
+  .promo__img {
+    width: 100%;
+  }
+  .quote__title {
+    font-size: 26px;
+  }
+  .nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 220px;
+    margin-right: auto;
+  }
+  .nav-title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nav-title__logo {
+    margin-bottom: 30px;
+  }
+  .nav-menu__list {
+    width: 320px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: auto;
+  }
+  .cards::after {
+    display: none;
+  }
   .opportunities__left {
     -webkit-transform: scale(0.55);
         -ms-transform: scale(0.55);
