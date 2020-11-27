@@ -312,6 +312,7 @@ li {
   max-width: 1530px;
   color: #fff;
   text-align: center;
+  margin: auto;
 }
 
 .quote__img {
