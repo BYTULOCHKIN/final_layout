@@ -870,7 +870,26 @@ li {
   }
 }
 
+@media (max-width: 380px) {
+  .skill-cards {
+    position: relative;
+    left: -130px;
+  }
+  .cards,
+  .skill-cards {
+    -webkit-transform: scale(0.38);
+        -ms-transform: scale(0.38);
+            transform: scale(0.38);
+  }
+}
+
 @media (max-width: 320px) {
+  .cards,
+  .skill-cards {
+    -webkit-transform: scale(0.23);
+        -ms-transform: scale(0.23);
+            transform: scale(0.23);
+  }
   .nav-menu__list {
     width: 250px;
   }

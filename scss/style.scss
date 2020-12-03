@@ -654,7 +654,21 @@ li {
     width: 280px;
   }
 }
+@media (max-width: 380px) {
+  .skill-cards {
+    position: relative;
+    left: -130px;
+  }
+  .cards,
+  .skill-cards {
+    transform: scale(0.38);
+  }
+}
 @media (max-width: 320px) {
+  .cards,
+  .skill-cards {
+    transform: scale(0.23);
+  }
   .nav-menu__list {
     width: 250px;
   }
