@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,6 +14,10 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
   </head>
   <body>
@@ -72,12 +76,17 @@
     <main class="main">
       <div class="container">
         <section class="promo">
-          <img class="promo__img" src="./img/10X.png" alt="" />
+          <img
+            data-wow-delay="0.5s"
+            class="wow promo__img animate__animated animate__flipInX"
+            src="./img/10X.png"
+            alt=""
+          />
 
           <p class="promo__text promo__left-text">what we do</p>
           <div
-            style="-webkit-transform: rotate(90deg); transform: rotate(90deg)"
-            class="promo__number"
+            class="promo__number wow animate__animated animate__flip"
+            data-wow-delay="0.2s"
           >
             1
           </div>
@@ -89,11 +98,15 @@
             who we are
           </p>
         </section>
-        <h2 class="promo__title">your presence</h2>
+        <h2
+          class="wow promo__title animate__animated promo__title animate__fadeInDown"
+        >
+          your presence
+        </h2>
 
         <section class="main-button">
           <img
-            class="main-button__img"
+            class="wow animate__animated main-button__img animate__rotateIn"
             src="./img/main-button.png"
             alt="main-button"
           />
@@ -110,16 +123,19 @@
       </div>
 
       <div class="opportunities">
-        <div class="opportunities__left">
+        <div
+          class="wow opportunities__left animate__animated animate__slideInLeft"
+        >
           <div class="cards">
-            <img src="./img/bg_card.png" class="cards__bg" />
+            <div><img src="./img/bg_card.png" class="cards__bg" /></div>
+
             <img src="./img/front__card.png" alt="" class="cards__front" />
             <div class="cards__number-slide">01<span>/05</span></div>
           </div>
         </div>
-        <div class="strategy">
-          <h2 class="strategy__title">Strategy & Creative</h2>
+        <div class="wow strategy animate__animated animate__slideInRight">
           <h2 class="strategy__title">
+            Strategy & Creative <br />
             We designe and build digital products, and services we believe in.
           </h2>
           <p class="strategy__text">
@@ -131,6 +147,42 @@
           <button class="strategy__button">LEARN MORE</button>
         </div>
       </div>
+      <div class="container">
+        <div class="skills">
+          <div class="wow skills-left animate__animated animate__slideInLeft">
+            <h2 class="skills-left__title">
+              We are bunch of super-skilled <br />
+              guys and gals who love <br />
+              to create websites.
+            </h2>
+
+            <p class="skills-left__text">
+              Filema Rodion proposes individual, airtight packages that keep the
+              products characteristics unchanged for treats for the marriage,
+              baptism and every social event
+            </p>
+            <div class="button__wrapper">
+              <button class="strategy__button skills-left__button">
+                LEARN MORE
+              </button>
+            </div>
+          </div>
+
+          <div class="wow skill-cards animate__animated animate__slideInRight">
+            <img src="./img/skills__bg.png" class="skill-cards__bg" />
+            <img
+              src="./img/skills__front.png"
+              alt=""
+              class="skill-cards__front"
+            />
+            <div class="cards__number-slide">01<span>/05</span></div>
+          </div>
+        </div>
+      </div>
     </main>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
