@@ -98,8 +98,7 @@ li {
     margin-bottom: 25px;
   }
 }
-.main {
-}
+
 .container {
   max-width: 1900px;
   margin: 0 auto;
@@ -254,8 +253,7 @@ li {
     text-align: center;
     margin: auto;
   }
-  &__signature {
-  }
+
   &__img {
     display: block;
     margin: auto;
@@ -377,8 +375,6 @@ li {
   display: flex;
   justify-content: space-around;
   margin-bottom: 100px;
-  &__right {
-  }
 }
 .skills-left {
   font-family: "Playfair Display", serif;
@@ -721,8 +717,6 @@ li {
   }
 }
 @media (max-width: 1580px) {
-  .opportunities {
-  }
   .strategy {
     &__title {
       font-family: "Playfair Display", serif;
