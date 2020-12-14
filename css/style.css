@@ -1005,6 +1005,158 @@ li {
   letter-spacing: 0.2em;
 }
 
+.section__slider {
+  background: #121619 url(../img/bg/bg_mountain.png) left bottom no-repeat;
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  max-width: 1600px;
+  padding: 0;
+  z-index: 1;
+}
+
+.swiper-slide {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  height: 100%;
+  width: 512px;
+  position: relative;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  background-image: transparent;
+  min-height: 380px;
+  padding: 40px 55px 0 50px;
+}
+
+.swiper-slide:hover {
+  background-image: -webkit-linear-gradient(54deg, #5e00ca 4%, #d5536f 95%);
+  background-image: -o-linear-gradient(54deg, #5e00ca 4%, #d5536f 95%);
+  background-image: linear-gradient(36deg, #5e00ca 4%, #d5536f 95%);
+}
+
+.swiper-slide__icon {
+  margin-bottom: 15px;
+}
+
+.swiper-slide__title {
+  font-family: "Lato";
+  font-size: 30px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.swiper-slide__text {
+  font-family: "Lato";
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.swiper-pagination {
+  position: static;
+  margin-top: 100px;
+}
+
+.swiper-pagination {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.swiper-pagination-bullet {
+  width: 25px;
+  height: 25px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: transparent;
+}
+
+.swiper-pagination-bullet::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background: #fff;
+}
+
+.swiper-pagination-bullet-active {
+  border: 2px solid #e9a019;
+}
+
+.swiper-pagination-bullet-active::before {
+  background: #e9a019;
+}
+
+.main .contact {
+  color: #ffffff;
+  text-align: center;
+  margin: auto;
+  margin-top: 550px;
+}
+
+.main .contact__title {
+  font-family: "Playfair Display";
+  font-size: 70px;
+  line-height: 95px;
+  font-weight: 400;
+}
+
+.main .contact .contact__link a {
+  font-family: "Playfair Display";
+  font-size: 70px;
+  line-height: 95px;
+  font-weight: 400;
+  color: #fff;
+  border-bottom: 2px solid magenta;
+}
+
 @-webkit-keyframes border {
   0% {
     opacity: 0.1;
@@ -1052,6 +1204,9 @@ li {
 }
 
 @media (max-width: 1580px) {
+  .swiper-container {
+    max-width: 1050px;
+  }
   .strategy__title {
     font-family: "Playfair Display", serif;
     font-size: 26pt;
@@ -1092,6 +1247,9 @@ li {
 }
 
 @media (max-width: 1090px) {
+  .swiper-container {
+    max-width: 512px;
+  }
   .nav-menu__list {
     width: 350px;
   }
@@ -1321,6 +1479,12 @@ li {
     -webkit-transform: scale(0.63);
         -ms-transform: scale(0.63);
             transform: scale(0.63);
+  }
+}
+
+@media (max-width: 580px) {
+  .swiper-container {
+    max-width: 290px;
   }
 }
 
