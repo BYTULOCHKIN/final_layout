@@ -175,7 +175,7 @@ li {
 }
 
 .nav-menu__list:last-child {
-  margin-right: 0;
+  margin-right: 80px;
 }
 
 .nav-menu__item {
@@ -193,7 +193,7 @@ li {
   position: absolute;
   z-index: 10;
   top: 66px;
-  right: 45px;
+  right: 0px;
 }
 
 .sidebar__list {
@@ -642,10 +642,6 @@ li {
 
 .skill-cards {
   position: relative;
-  margin: auto;
-}
-
-.skill-cards__wrapper {
   margin: auto;
 }
 
@@ -1274,7 +1270,7 @@ li {
     margin: auto;
   }
   .cards,
-  .skill-cards {
+  .skill-cards__wrapper {
     -webkit-transform: scale(0.7);
         -ms-transform: scale(0.7);
             transform: scale(0.7);
@@ -1308,11 +1304,6 @@ li {
   .strategy .skills-left__text, .strategy__text {
     max-width: 300px;
     font-size: 14pt;
-  }
-  .skill-cards {
-    -webkit-transform: scale(0.7);
-        -ms-transform: scale(0.7);
-            transform: scale(0.7);
   }
   .skills {
     margin-top: 70px;
@@ -1594,7 +1585,7 @@ li {
 
 @media (max-width: 625px) {
   .cards,
-  .skill-cards {
+  .skill-cards__wrapper {
     -webkit-transform: scale(0.63);
         -ms-transform: scale(0.63);
             transform: scale(0.63);
@@ -1659,7 +1650,7 @@ li {
     left: -130px;
   }
   .cards,
-  .skill-cards {
+  .skill-cards__wrapper {
     -webkit-transform: scale(0.38);
         -ms-transform: scale(0.38);
             transform: scale(0.38);
@@ -1668,7 +1659,7 @@ li {
 
 @media (max-width: 320px) {
   .cards,
-  .skill-cards {
+  .skill-cards__wrapper {
     -webkit-transform: scale(0.23);
         -ms-transform: scale(0.23);
             transform: scale(0.23);
