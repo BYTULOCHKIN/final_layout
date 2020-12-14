@@ -862,6 +862,7 @@ li {
 
 .shopping-cards__img {
   width: 100%;
+  display: block;
 }
 
 .shopping-cards__button {

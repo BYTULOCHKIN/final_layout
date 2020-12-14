@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>10-X</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -27,6 +31,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600&family=Montserrat:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
@@ -349,16 +354,144 @@
           </button>
         </div>
       </section>
+      <section class="section__slider">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-slide__icon">
+                <img src="./img/slider__icons/icon1.png" alt="" srcset="" />
+              </div>
+              <div class="swiper-slide__title">Agility</div>
+              <div class="swiper-slide__text">
+                We believe in a seamless client partnership that connects us
+                into a single unified team. We're not only agile in code but in
+                discovery, and design.
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__icon">
+                <img src="./img/slider__icons/icon1.png" alt="" srcset="" />
+              </div>
+              <div class="swiper-slide__title">Team</div>
+              <div class="swiper-slide__text">
+                Our dedicated team model ensures that every project receives the
+                meticulous attention and resource it deserves from our
+                Strategists, Designers, Producers, Engineers, & Filmmakers.
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__icon">
+                <img src="./img/slider__icons/icon2.png" alt="" srcset="" />
+              </div>
+              <div class="swiper-slide__title">Colaboration</div>
+              <div class="swiper-slide__text">
+                Nothing we do is in isolation. Our process is extremely
+                collaborative, leveraging our clients unique perspectives to
+                activate our own expertise.
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__icon">
+                <img src="./img/slider__icons/icon3.png" alt="" srcset="" />
+              </div>
+              <div class="swiper-slide__title">Clock</div>
+              <div class="swiper-slide__text">
+                We believe in a seamless client partnership that connects us
+                into a single unified team. We're not only agile in code but in
+                discovery, and design.
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__icon">
+                <img src="./img/slider__icons/icon2.png" alt="" srcset="" />
+              </div>
+              <div class="swiper-slide__title">Agility</div>
+              <div class="swiper-slide__text">
+                We believe in a seamless client partnership that connects us
+                into a single unified team. We're not only agile in code but in
+                discovery, and design.
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__icon">
+                <img src="./img/slider__icons/icon3.png" alt="" srcset="" />
+              </div>
+              <div class="swiper-slide__title">Agility</div>
+              <div class="swiper-slide__text">
+                We believe in a seamless client partnership that connects us
+                into a single unified team. We're not only agile in code but in
+                discovery, and design.
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="contact">
+          <h2 class="contact__title">
+            If you'd like to get in touch,<br />
+            you can send ud an email directly at
+          </h2>
+          <div class="contact__link">
+            <a href="mailto:hello@10x.com">hello@10x.com</a>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__logo">
+          <img src="img/logo/ten-x-logo-dark.png" alt="" />
+        </div>
+        <div class="footer__inner">
+          <div class="menu-footer">
+            <ul class="menu-footer__list">
+              <li>
+                <a class="menu-footer__item" href="#">about</a>
+              </li>
+              <li><a class="menu-footer__item" href="#">projects</a></li>
+              <li><a class="menu-footer__item" href="#">blog</a></li>
+              <li><a class="menu-footer__item" href="#">contact </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-social">
+          <ul class="footer-social__list">
+            <li class="footer-social__item">
+              <a href="#" class="sidebar__link"
+                ><img src="./img/logo/instagram.png" alt=""
+              /></a>
+            </li>
+            <li class="footer-social__item">
+              <a href="#" class="sidebar__link"
+                ><img src="./img/logo/facebook.png" alt=""
+              /></a>
+            </li>
+            <li class="footer-social__item">
+              <a href="#" class="sidebar__link"
+                ><img src="./img/logo/twitter.png" alt=""
+              /></a>
+            </li>
+            <li class="footer-social__item footer-social__item_active">
+              <a href="#" class="sidebar__link"
+                ><img src="./img/logo/behance.png" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
     <div class="scrollbar">
       <div id="progressbar"></div>
       <div id="scrollPath"></div>
     </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script>
       new WOW().init();
     </script>
+
     <script type="text/JavaScript" src="./js/main.js"></script>
     <script type="text/JavaScript" src="./js/burger.js"></script>
   </body>
