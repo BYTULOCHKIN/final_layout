@@ -679,7 +679,7 @@ li {
 }
 
 .section__slider {
-  background: #121619 url(../img/bg/bg_mountain.png) left bottom no-repeat;
+  background: #121619 url(../img/bg/bg_mountain.png) center no-repeat;
 }
 .swiper {
   &-wrapper {
@@ -780,9 +780,81 @@ li {
     line-height: 95px;
     font-weight: 400;
     color: #fff;
-    border-bottom: 2px solid magenta;
+    border-bottom: 2px solid rgb(167, 0, 167);
   }
 }
+
+// FOOTER
+.footer {
+  padding-bottom: 100px;
+  &__logo {
+    margin-top: 200px;
+    margin-right: 0;
+    margin-bottom: 30px;
+    & img {
+      display: block;
+      margin: auto;
+    }
+  }
+  &__inner {
+    position: relative;
+  }
+}
+
+.menu-footer {
+  margin: auto;
+
+  &__list {
+    margin: auto;
+    max-width: 400px;
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-around;
+  }
+  &__item {
+    transition: all 0.2s ease;
+    &:hover {
+      color: rgb(167, 0, 167);
+    }
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 25%;
+    top: 50%;
+    background-image: $linearGradient-3;
+  }
+  &::before {
+    content: "";
+    left: 30px;
+  }
+  &::after {
+    right: 30px;
+  }
+}
+.nav-menu__list .footer {
+}
+
+.footer-social {
+  position: static;
+  margin: 30px auto 40px auto;
+  display: block;
+  margin: auto;
+  max-width: 300px;
+
+  .footer-social__list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  &__item {
+  }
+}
+
 // ANIMATION
 
 @keyframes border {
@@ -910,6 +982,10 @@ li {
   .tabs__item:after {
     display: none;
   }
+  .menu-footer::before,
+  .menu-footer::after {
+    width: 20%;
+  }
 }
 @media (max-width: 860px) {
   .nav-title__logo {
@@ -941,11 +1017,17 @@ li {
   .quote__title {
     font-size: 26px;
   }
-
+  .opportunities__left {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
   .nav-menu__list {
     width: 280px;
     flex-direction: row;
     margin: auto;
+  }
+  .specialize__title {
+    font-size: 40px;
   }
   .tabs {
     flex-direction: column;
@@ -953,6 +1035,20 @@ li {
     &__item:after {
       display: none;
     }
+  }
+  .main .contact {
+    margin-top: 150px;
+  }
+  .main .contact__title {
+    font-size: 38px;
+    line-height: normal;
+  }
+  .main .contact .contact__link a {
+    font-size: 30px;
+  }
+  .menu-footer::before,
+  .menu-footer::after {
+    display: none;
   }
 }
 @media (max-width: 767px) {
