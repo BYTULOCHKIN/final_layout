@@ -323,7 +323,6 @@ li {
   &__number-slide {
     font-family: "Playfair Display", serif;
     font-size: 30px;
-    margin-left: 250px;
     color: $textColor_2;
     & span {
       font-family: "Playfair Display", serif;
@@ -423,6 +422,9 @@ li {
 .skill-cards {
   position: relative;
   margin: auto;
+  &__wrapper {
+    margin: auto;
+  }
   &::before {
     transform: rotate(180deg);
     display: flex;

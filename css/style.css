@@ -490,7 +490,6 @@ li {
 .cards__number-slide {
   font-family: "Playfair Display", serif;
   font-size: 30px;
-  margin-left: 250px;
   color: #fff;
 }
 
@@ -643,6 +642,10 @@ li {
 
 .skill-cards {
   position: relative;
+  margin: auto;
+}
+
+.skill-cards__wrapper {
   margin: auto;
 }
 
